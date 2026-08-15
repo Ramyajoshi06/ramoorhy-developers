@@ -162,7 +162,7 @@ export default function ServicesSection() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' });
 
   return (
-    <section id="services" className="py-24 md:py-32 bg-navy-900 relative overflow-hidden">
+    <section id="services" className="py-16 md:py-32 bg-navy-900 relative overflow-hidden">
       {/* Background pattern */}
       <div
         className="absolute inset-0 opacity-[0.025] pointer-events-none"

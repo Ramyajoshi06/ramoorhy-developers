@@ -44,7 +44,7 @@ export default function EngineeringSection() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' });
 
   return (
-    <section className="py-24 md:py-32 bg-navy-950 relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-navy-950 relative overflow-hidden">
       {/* Blueprint grid */}
       <div
         className="absolute inset-0 opacity-[0.035] pointer-events-none"

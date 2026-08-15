@@ -105,7 +105,7 @@ export default function ProcessTimeline() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' });
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #0a0f1e 0%, #0f1729 50%, #0a0f1e 100%)' }}>
+    <section className="py-16 md:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #0a0f1e 0%, #0f1729 50%, #0a0f1e 100%)' }}>
       {/* Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-gold-400/5 blur-3xl rounded-full pointer-events-none" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-400/30 to-transparent" />

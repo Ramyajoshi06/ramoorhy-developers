@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
   return (
     <AnimatePresence>
       {visible && (
-        <div className="fixed bottom-6 right-6 z-[900] flex flex-col items-end gap-3">
+        <div className="fixed bottom-5 right-4 md:bottom-6 md:right-6 z-[900] flex flex-col items-end gap-3">
           {/* Popup card */}
           <AnimatePresence>
             {open && (
@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.8, y: 20 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                className="rounded-2xl border border-white/15 overflow-hidden shadow-2xl w-[280px]"
+                className="rounded-2xl border border-white/15 overflow-hidden shadow-2xl w-[260px] md:w-[280px]"
                 style={{ background: 'linear-gradient(135deg, #0f1729, #1a2540)' }}
               >
                 {/* Header */}

@@ -78,7 +78,7 @@ export default function InteractiveHouse() {
   const active = hotspots.find(h => h.id === activeHotspot);
 
   return (
-    <section className="py-24 md:py-32 bg-navy-900 relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-navy-900 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-400/20 to-transparent" />
       {/* Blueprint grid */}
       <div

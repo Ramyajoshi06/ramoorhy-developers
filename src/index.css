@@ -360,5 +360,43 @@ body {
 @media (max-width: 768px) {
   .section-wrapper { padding: 0 1rem; }
   .btn-primary, .btn-outline { padding: 0.75rem 1.5rem; font-size: 0.82rem; }
-  .whatsapp-float { bottom: 1.25rem; right: 1.25rem; width: 52px; height: 52px; }
+  
+  /* WhatsApp button — position higher on mobile to avoid bottom bar overlap */
+  .whatsapp-float { bottom: 1.25rem; right: 1rem; width: 48px; height: 48px; }
+
+  /* Reduce heading sizes on mobile for better fit */
+  .heading-xl {
+    font-size: clamp(1.9rem, 8vw, 2.8rem);
+    line-height: 1.15;
+  }
+  .heading-lg {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    line-height: 1.25;
+  }
+  .heading-md {
+    font-size: clamp(1.15rem, 4vw, 1.5rem);
+    line-height: 1.35;
+  }
+
+  /* Fix modal padding on small screens */
+  .modal-overlay { padding: 0.75rem; }
+
+  /* Form inputs slightly smaller on mobile */
+  .form-input { padding: 0.75rem 0.85rem; font-size: 0.9rem; }
+}
+
+/* Extra small screens (under 380px) */
+@media (max-width: 380px) {
+  .section-wrapper { padding: 0 0.75rem; }
+  .heading-xl {
+    font-size: clamp(1.7rem, 7.5vw, 2.2rem);
+  }
+  .btn-primary, .btn-outline { padding: 0.7rem 1.25rem; font-size: 0.78rem; }
+}
+
+/* Safe area for devices with bottom bars */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .whatsapp-float {
+    bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  }
 }

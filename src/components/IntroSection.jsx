@@ -78,7 +78,7 @@ export default function IntroSection() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' });
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-navy-950 relative overflow-hidden">
+    <section id="about" className="py-16 md:py-32 bg-navy-950 relative overflow-hidden">
       {/* Subtle bg decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold-400/3 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-blue-500/3 blur-3xl pointer-events-none" />
@@ -119,7 +119,7 @@ export default function IntroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-16 py-6 px-8 rounded-2xl border border-gold-400/20 bg-gold-400/5 flex flex-col md:flex-row items-center justify-between gap-4"
+          className="mt-12 md:mt-16 py-5 md:py-6 px-5 md:px-8 rounded-2xl border border-gold-400/20 bg-gold-400/5 flex flex-col items-center md:flex-row md:items-center justify-between gap-4 text-center md:text-left"
         >
           <div>
             <p className="text-gold-400 font-serif font-semibold text-lg">"निर्माणम् प्रगतिः, भवनं भाग्यम्"</p>

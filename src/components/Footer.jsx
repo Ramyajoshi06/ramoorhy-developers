@@ -41,7 +41,7 @@ export default function Footer() {
       {/* Top gold line */}
       <div className="h-0.5 bg-gradient-to-r from-transparent via-gold-400/60 to-transparent" />
 
-      <div className="section-wrapper pt-16 pb-10">
+      <div className="section-wrapper pt-12 md:pt-16 pb-8 md:pb-10" style={{ paddingBottom: 'max(2rem, env(safe-area-inset-bottom, 0px))' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">

@@ -8,7 +8,7 @@ export default function CTASection() {
   const whatsappMsg = encodeURIComponent('Hello Ramoorhy Construction & Development, I am ready to build my dream home. Please get in touch!');
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden" ref={ref}>
+    <section className="py-16 md:py-32 relative overflow-hidden" ref={ref}>
       {/* Background */}
       <div
         className="absolute inset-0"

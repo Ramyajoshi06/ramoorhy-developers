@@ -168,7 +168,7 @@ export default function ProjectsGallery() {
     : projectPlaceholders.filter(p => p.category === activeFilter);
 
   return (
-    <section id="projects" className="py-24 md:py-32 bg-navy-950 relative overflow-hidden">
+    <section id="projects" className="py-16 md:py-32 bg-navy-950 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
 
       <div className="section-wrapper">

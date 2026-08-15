@@ -173,7 +173,7 @@ export default function MaterialsSection() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' });
 
   return (
-    <section id="materials" className="py-24 md:py-32 bg-navy-900 relative overflow-hidden">
+    <section id="materials" className="py-16 md:py-32 bg-navy-900 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="section-wrapper">

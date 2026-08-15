@@ -83,7 +83,7 @@ export default function WhyChooseUs() {
   const titleInView = useInView(titleRef, { once: true, margin: '-80px' });
 
   return (
-    <section id="why-us" className="py-24 md:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #060b18 100%)' }}>
+    <section id="why-us" className="py-16 md:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #060b18 100%)' }}>
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="absolute top-1/3 right-0 w-64 h-64 rounded-full bg-gold-400/4 blur-3xl pointer-events-none" />

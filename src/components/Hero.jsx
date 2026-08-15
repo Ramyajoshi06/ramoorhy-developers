@@ -60,7 +60,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold-400 to-transparent z-10 opacity-60" />
 
       {/* Content */}
-      <div className="relative z-10 section-wrapper w-full pt-32 pb-24 flex flex-col items-center text-center">
+      <div className="relative z-10 section-wrapper w-full pt-28 md:pt-32 pb-20 md:pb-24 flex flex-col items-center text-center">
 
         {/* Badge */}
         <motion.div
@@ -69,7 +69,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mb-8"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-400/40 bg-gold-400/10 text-gold-400 text-xs font-bold tracking-[0.2em] uppercase backdrop-blur-sm">
+          <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-gold-400/40 bg-gold-400/10 text-gold-400 text-[10px] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.2em] uppercase backdrop-blur-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
             CONSTRUCTION • DEVELOPMENT • MATERIALS
           </span>
@@ -86,7 +86,7 @@ export default function Hero() {
           }}
         >
           <motion.h1
-            className="heading-xl text-white mb-2"
+            className="heading-xl text-white mb-1 md:mb-2"
             variants={fadeUp}
             custom={0.4}
           >
@@ -105,7 +105,7 @@ export default function Hero() {
 
         {/* Hindi Subheading */}
         <motion.p
-          className="text-white/60 text-base md:text-lg font-medium mt-4 mb-3"
+          className="text-white/60 text-sm md:text-lg font-medium mt-3 md:mt-4 mb-2 md:mb-3 px-4 md:px-0"
           style={{ fontFamily: 'Inter, sans-serif' }}
           variants={fadeUp}
           custom={0.65}
@@ -117,7 +117,7 @@ export default function Hero() {
 
         {/* English Supporting Text */}
         <motion.p
-          className="text-white/55 text-base md:text-lg max-w-2xl mt-2 leading-relaxed"
+          className="text-white/55 text-sm md:text-lg max-w-2xl mt-1 md:mt-2 leading-relaxed px-4 md:px-0"
           variants={fadeUp}
           custom={0.75}
           initial="hidden"
@@ -129,20 +129,20 @@ export default function Hero() {
 
         {/* Location Tag */}
         <motion.div
-          className="mt-4 mb-10"
+          className="mt-3 md:mt-4 mb-6 md:mb-10"
           variants={fadeUp}
           custom={0.85}
           initial="hidden"
           animate="visible"
         >
-          <span className="text-gold-400/80 text-sm font-medium tracking-widest uppercase">
+          <span className="text-gold-400/80 text-xs md:text-sm font-medium tracking-widest uppercase">
             📍 Dungarpur, Rajasthan
           </span>
         </motion.div>
 
         {/* CTA Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 items-center"
+          className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center w-full sm:w-auto px-4 sm:px-0"
           variants={fadeUp}
           custom={0.95}
           initial="hidden"
@@ -151,7 +151,7 @@ export default function Hero() {
           <a
             href="#contact"
             onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
-            className="btn-primary text-sm px-8 py-4"
+            className="btn-primary text-sm px-8 py-3.5 md:py-4 w-full sm:w-auto justify-center"
             id="hero-start-project-btn"
           >
             <span>Start Your Project</span>
@@ -160,7 +160,7 @@ export default function Hero() {
           <a
             href="#services"
             onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }}
-            className="btn-outline text-sm px-8 py-4"
+            className="btn-outline text-sm px-8 py-3.5 md:py-4 w-full sm:w-auto justify-center"
             id="hero-explore-services-btn"
           >
             <PlayCircle size={16} />
@@ -170,7 +170,7 @@ export default function Hero() {
 
         {/* Stats row — icon-based only, no fake numbers */}
         <motion.div
-          className="mt-16 grid grid-cols-3 gap-6 md:gap-12 max-w-lg md:max-w-xl"
+          className="mt-10 md:mt-16 grid grid-cols-3 gap-4 md:gap-12 max-w-sm md:max-w-xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.7 }}
@@ -180,9 +180,9 @@ export default function Hero() {
             { icon: '🔨', label: 'Renovation' },
             { icon: '🧱', label: 'Quality Materials' },
           ].map((item) => (
-            <div key={item.label} className="flex flex-col items-center gap-2">
-              <span className="text-2xl md:text-3xl">{item.icon}</span>
-              <span className="text-white/50 text-xs font-medium text-center leading-tight">{item.label}</span>
+            <div key={item.label} className="flex flex-col items-center gap-1.5 md:gap-2">
+              <span className="text-xl md:text-3xl">{item.icon}</span>
+              <span className="text-white/50 text-[10px] md:text-xs font-medium text-center leading-tight">{item.label}</span>
             </div>
           ))}
         </motion.div>

@@ -153,7 +153,7 @@ export default function CustomerBenefits() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1200 0%, #0a0f1e 40%, #1a1200 100%)' }}>
+    <section className="py-16 md:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1200 0%, #0a0f1e 40%, #1a1200 100%)' }}>
       {/* Gold glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-400/50 to-transparent" />

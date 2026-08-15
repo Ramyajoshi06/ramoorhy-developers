@@ -62,7 +62,7 @@ export default function Navbar() {
         style={{ zIndex: 500 }}
       >
         <div className="section-wrapper">
-          <div className="flex items-center justify-between h-20 md:h-24">
+          <div className="flex items-center justify-between h-16 md:h-24">
             {/* Logo */}
             <a
               href="#home"
@@ -73,14 +73,14 @@ export default function Navbar() {
                 <img
                   src={logo}
                   alt="Ramoorhy Construction Logo"
-                  className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                  className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-bold text-sm md:text-base leading-tight tracking-wide font-serif">
+                <span className="text-white font-bold text-xs md:text-base leading-tight tracking-wide font-serif">
                   RAMOORHY
                 </span>
-                <span className="text-gold-400 text-[10px] md:text-xs font-semibold tracking-[0.15em] uppercase leading-tight">
+                <span className="text-gold-400 text-[9px] md:text-xs font-semibold tracking-[0.12em] md:tracking-[0.15em] uppercase leading-tight">
                   Construction & Development
                 </span>
               </div>
